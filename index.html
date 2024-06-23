@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="app.css">
+    <script defer src="main.js"></script>
+</head>
+
+<body>
+    <p id="dev">Developed with <span>❤</span> by <a href="https://codepen.io/Tapan681/" target="_blank">Tapan Dabrai</a>
+    </p>
+
+    <div id="container">
+        <h2>Password Generator</h2>
+        <div class="result-container">
+            <span id="result" class="result"></span>
+            <button class="btn" id="clipboard">
+                <i class="far fa-clipboard"></i>
+            </button>
+        </div>
+        <div class="settings">
+            <div class="setting">
+                <label for="pwdLength">Password Length</label>
+                <input type="number" name="pwdLength" id="pwdLength" min="4" max="30" value="20">
+            </div>
+            <div class="setting">
+                <label for="pwdUpperCase">Include uppercase letters</label>
+                <input type="checkbox" name="pwdUpperCase" id="pwdUpperCase" checked />
+            </div>
+            <div class="setting">
+                <label for="pwdLowerCase">Include lowercase letters</label>
+                <input type="checkbox" name="pwdLowerCase" id="pwdLowerCase" checked />
+            </div>
+            <div class="setting">
+                <label for="pwdNumbers">Include numbers</label>
+                <input type="checkbox" name="pwdNumbers" id="pwdNumbers" checked />
+            </div>
+            <div class="setting">
+                <label for="pwdSymbols">Include symbols</label>
+                <input type="checkbox" name="pwdSymbols" id="pwdSymbols" checked />
+            </div>
+            <button id="generate" class="btn btn-large">Generate Password</button>
+        </div>
+    </div>
+</body>
+
+</html>
